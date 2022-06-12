@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <!-------Header------->
+    <header class="relative border-b-4 border-gray">
+        <!--Navbar-->
+        <nav class="relative  md:container  md:mx-auto p-6">
+            <!--Flex Container-->
+            <div class="flex items-center justify-between">
+                <!--Logo-->
+                <div class="navbar-brand h-12 w-12">
+                    <a href="#"><img src="img/logo.svg" class="w-full" alt="logo"></a>
+                </div>
+                <!--Left Links-->
+                <div class="hidden navbar-left flex-1 ml-6 font-bold space-x-6 lg:flex">
+                    <a href="#">MENU</a>
+                    <a href="#">REWARDS</a>
+                    <a href="#">GIFT CARDS</a>
+                </div>
+                <!--Right Links-->
+                <div class="hidden navbar-right flex items-center justify-center space-x-6 lg:flex">
+                    <a href="#"><img src="./img/marker.svg" class="h-5 w-5 m-0" alt="marker"></a>
+                    <span class="font-bold">Find a store</span>
+                    <button class="rounded-full outline outline-black py-1.5 px-3.5">Sign In</button>
+                    <button class="rounded-full bg-black text-white  py-2.5 px-2.5">Join now</button>
+                </div>
+            </div>
+           <!-- Hamburger Icon -->
+           <button
+           id="menu-btn"
+           class="block hamburger lg:hidden focus:outline-none"
+         >
+           <span class="hamburger-top"></span>
+           <span class="hamburger-middle"></span>
+           <span class="hamburger-bottom"></span>
+         </button>
+       </div>
+ 
+       <!-- Mobile Menu -->
+     <div class="h-full lg:hidden">
+       <div
+         id="menu"
+         class="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-8 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+       >
+       <!--Mobile Links-->
+       <div class="flex flex-col self-start ml-5 gap-5">
+        <div>Menu</div>
+       <div>Rewards</div>
+       <div>Gift</div>
+       </div>
+
+       <div class="w-11/12 border border-black-100"></div>
+
+       <!--Mobile Buttons-->
+       <div class="flex gap-4">
+        <button class="rounded-full outline outline-black py-1.5 px-2.5">Sign In</button>
+        <button class="rounded-full bg-black text-white  py-1.5 px-2.5">Join now</button>
+       </div>
+     
+       
+       <div class="flex gap-4">
+        <a href="#"><img src="./img/marker.svg" class="h-5 w-5 m-0" alt="marker"></a>
+       <span class="font-bold">Find a store</span>
+       </div>
+       </div>
+     </div>
+        </nav>
+    </header>
+    <!--------Header--------->
+
+    <!--Top Section-->
+    <section class="xl:container xl:mx-auto mt-6 md:container md:mx-auto">
+        <!--Grid Container-->
+        <div class="grid grid-cols-1 md:grid-cols-2 row-span-2">
+            <!--Image-->
+            <div class="w-full">
+                <img src="/img/cellphone.jpg" alt="CellPhone">
+            </div>
+            <!--Content-->
+            <div class="w-full bg-darkGreen p-3  flex flex-col justify-around text-white text-center md:p-0">
+
+                <h3 class="font-bold text-xl tracking-wider md:3xl">Turn your usual into free faves*</h3>
+                <button
+                    class="rounded-full outline outline-white w-fit self-center py-1 px-2 block text-sm mt-8 md:mb-3  py-1.5 px-5">Join
+                    Starbucks
+                    Rewards</button>
+
+            </div>
+        </div>
+    </section>
+    <!-----Mid Section------>
+    <section class="xl:container xl:mx-auto  mt-6 md:container md:mx-auto">
+        <!--Grid Container-->
+        <div class="grid grid-cols-1 place-items-center md:grid-cols-2">
+
+            <!--Content-->
+
+            <div class=" w-full h-full order-2 flex flex-col p-6 justify-around bg-mintGreen text-center md:h-full">
+                <h1 class="text-xl font-bold md:text-2xl lg:text-6xl xl:text-6xl">Planet-positive<br
+                        class="hidden md:block"> tips</h1>
+                <p class="text-lg xl:text-xl text-center leading-relaxed">April is earth month, but our commitment to
+                    reducing our environmental impact is
+                    year round. Try
+                    these tips on your next Starbucks visit.</p>
+                <button class="rounded-full outline outline-darkGreen block w-fit self-center py-1 px-2.5">Learn
+                    How</button>
+            </div>
+
+            <!--Image-->
+            <div class="order-1 md:order-2">
+                <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-77659.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <!------Card Section----->
+    <section class="xl:container xl:mx-auto mt-6 md:container md:mx-auto">
+        <!--Card Grid-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+            <!--Card 1-->
+            <div>
+                <div class="card-img">
+                    <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-77660.jpg"
+                        alt="Ice Coffee">
+                </div>
+                <!--Card Content-->
+                <div class="bg-darkGreen text-center pb-7 text-white">
+                    <!--Content Container-->
+                    <div class="py-8 px-16 flex flex-col items-center gap-7">
+                        <h2 class="font-bold xl:text-5xl leading-relaxed">Iced shaken awakening</h2>
+                        <p>Introducing our new Iced Toasted Vanilla Oatmilk Shaken Espresso with rich, creamy layers and
+                            nondairy goodness.</p>
+                        <button class="rounded-full outline outline-white block py-1 px-2.5">Order
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Card 2-->
+            <div>
+                <div class="card-img">
+                    <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-77661.jpg"
+                        alt="Smoothie">
+                </div>
+                <!--Card Content-->
+                <div class="bg-darkGreen text-center pb-7 text-white">
+                    <!--Content Container-->
+                    <div class=" py-8 px-16 flex flex-col items-center gap-7">
+                        <h2 class="font-bold xl:text-5xl leading-relaxed">Cheerfully chill</h2>
+                        <p>Introducing our new Iced Toasted Vanilla Oatmilk Shaken Espresso with rich, creamy layers and
+                            nondairy goodness.</p>
+                        <button class="rounded-full outline outline-white block py-1 px-2.5">Order
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Veggie Goodness Section-->
+    <section class="xl:container xl:mx-auto mt-6 md:container md:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <!--Image-->
+            <div>
+                <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-77695.jpg" alt="Veggie Wrap"
+                    class="h-full">
+            </div>
+            <div class="bg-darkGreen text-center pb-7 text-white flex flex-col justify-around">
+
+                <!--Content Container-->
+                <div class="py-8 px-16 flex flex-col items-center gap-7">
+                    <h2 class="font-bold xl:text-2xl leading-relaxed tracking-wider">Vegetarian goodness</h2>
+                    <p class="xl:text-xl tracking-wider">Our Spinach, Feta & Egg White Wrap offers a meatless way to
+                        seize the day.</p>
+                    <button class="rounded-full outline outline-white block py-1 px-2.5">Order
+                        Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Uber Eats Section-->
+    <section class="xl:container xl:mx-auto mt-6 md:container md:mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="bg-mintGreen text-center pb-7 text-darkGreen flex flex-col justify-around order-2 md:order-1">
+                <!--Content Container-->
+                <div class="py-8 px-16 flex flex-col items-center gap-10 ">
+                    <h2 class="font-bold xl:text-2xl leading-relaxed tracking-wider">A good day, on its way</h2>
+                    <p class="xl:text-xl tracking-wider">Get your favorites on Uber Eats **.</p>
+                    <button class="rounded-full outline outline-darkGreen block py-1 px-2.5">Order
+                        Now</button>
+                </div>
+            </div>
+            <!--Image-->
+            <div class="order-1 md:order-2">
+                <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-77302.jpg" alt="Uber Eats"
+                    class="h-full">
+            </div>
+        </div>
+
+    </section>
+    <!--Credit Card Section-->
+    <section class="xl:container bg-mintGreen xl:mx-auto mt-6  md:container md:mx-auto ">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <!--Image-->
+            <div class="md:self-center">
+                <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-75418.jpg" alt="Credit Card">
+            </div>
+            <div class="text-center bg-mintGreen text-darkGreen flex flex-col justify-around order-2 md:order-1">
+                <!--Content Container-->
+                <div class="py-8 px-16 flex flex-col items-center gap-10 bg-mintGreen">
+                    <h2 class="font-bold xl:text-2xl leading-relaxed tracking-wider">Earning 4,500 Bonus Stars is Super
+                        Starifying</h2>
+                    <p class="xl:text-2xl tracking-wider">*Earn more Stars and even more Rewards with a $0 intro annual
+                        fee for your first year with the Starbucks® Rewards Visa® Card. Plus your Stars won’t expire –
+                        an exclusive Starbucks benefit for cardmembers. Now that’s Super Starifying.</p>
+                    <button class="rounded-full outline outline-darkGreen block py-1 px-2.5">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------Grid Menu------->
+    <section class="xl:container relative xl:mx-auto mt-10 px-4 border-t-2 border-gray">
+        <!--Grid Items-->
+        <div class="hidden grid grid-cols-5 lg:grid gap-5">
+            <div class="grid-item my-5">
+                <h3 class="font-medium">About Us</h3>
+                <ul>
+                    <li>Our Company</li>
+                    <li>Our Coffee</li>
+                    <li>Stories and News</li>
+                    <li>Starbucks Archive</li>
+                    <li>Investor Relations</li>
+                    <li>Customer Service</li>
+                </ul>
+            </div>
+
+            <div class="grid-item my-5">
+                <h3 class="font-medium">Careers</h3>
+                <ul>
+                    <li>Culture and Values</li>
+                    <li>Inclusion, Diversity and Equity</li>
+                    <li>College Achievement Plan</li>
+                    <li>Alumini Community</li>
+                    <li>U.S Careers</li>
+                    <li>International Careers</li>
+                </ul>
+            </div>
+
+            <div class="grid-item my-5">
+                <h3 class="font-medium">Social Impact</h3>
+                <ul>
+                    <li>People</li>
+                    <li>Planet</li>
+                    <li>Environmental and Social Impact Reporting</li>
+                </ul>
+            </div>
+
+            <div class="grid-item my-5">
+                <h3 class="font-medium">For Business Partners</h3>
+                <ul>
+                    <li>Landlord Support Center</li>
+                    <li>Suppliers</li>
+                    <li>Corporate Gift Card Sales</li>
+                    <li>Office and Foodservice Coffee</li>
+
+                </ul>
+            </div>
+
+            <div class="grid-item my-5">
+                <h3 class="font-medium">Order and Pickup</h3>
+                <ul>
+                    <li>Order on the App</li>
+                    <li>Order on the Web</li>
+                    <li>Delivery</li>
+                    <li>Order and Pickup Options</li>
+                    <li>Explore and Find Coffee for Home</li>
+                </ul>
+            </div>
+        </div>
+        <!--Accordion Menu-->
+        <div class="accordion-container mt-6 lg:hidden">
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    About Us
+
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content my-3 ">
+                        <div class="my-3">Our Company</div>
+                        <div class="my-3">Our Coffee</div>
+                        <div class="my-3">Stories and News</div>
+                        <div class="my-3">Starbucks Archive</div>
+                        <div class="my-3">Investor Relations</div>
+                        <div class="my-3">Customer Service</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    Careers
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content my-3 ">
+                        <div class="my-3">Culture and Values</div>
+                        <div class="my-3">Inclusion, Diversity, and Equity</div>
+                        <div class="my-3">College Achievement Plan</div>
+                        <div class="my-3">Alumini Community</div>
+                        <div class="my-3">U.S Careers</div>
+                        <div class="my-3">International Careers</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    Social Impact
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content my-3 ">
+                        <div class="my-3">People</div>
+                        <div class="my-3">Planet</div>
+                        <div class="my-3">Environmental and Social Impact Reporting</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    For Business Partners
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content my-3 ">
+                        <div class="my-3">Landlord Suppport Center</div>
+                        <div class="my-3">Suppliers</div>
+                        <div class="my-3">Corporate Gift Card Sales</div>
+                        <div class="my-3">Office and Foodservice Coffee</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-item-header">
+                    Order and Pickup
+                </div>
+                <div class="accordion-item-body">
+                    <div class="accordion-item-body-content my-3 ">
+                        <div class="my-3">Order on the App</div>
+                        <div class="my-3">Order on the Web</div>
+                        <div class="my-3">Delivery</div>
+                        <div class="my-3">Order and Pickup Options</div>
+                        <div class="my-3">Explore and Find Coffee for Home</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer & Social Media Section-->
+    <footer class="xl:container xl:mx-auto mt-6 py-10 px-4 border-t-2 border-gray">
+        <!--Footer Container-->
+        <div class="footer-container">
+            <!--Social Icons-->
+            <div class="social my-3 flex items-center space-x-6">
+                <a href=""><img src="img/social-spotify.svg" alt="social-spotify" class="w-10"></a>
+                <a href=""><img src="img/social-facebook.svg" alt="social-facebook" class="w-10"></a>
+                <a href=""><img src="img/social-pinterest.svg" alt="social-pinterest" class="w-10"></a>
+                <a href=""><img src="img/social-instagram.svg" alt="social-instagram" class="w-10"></a>
+                <a href=""><img src="img/social-youtube.svg" alt="social-youtube" class="w-10"></a>
+                <a href=""><img src="img/social-twitter.svg" alt="social-twitter" class="w-10"></a>
+
+
+            </div>
+
+        </div>
+        <!--Terms Of Servcie-->
+        <div class="flex flex-col items-start mt-6 gap-7 md:flex-row ">
+            <span>Privacy Policy</span>
+            <span class="hidden w-0.5 h-5 bg-black md:block"></span>
+            <span>Terms Of Use</span>
+            <span class="hidden w-0.5 h-5 bg-black md:block"></span>
+            <span>CA Supply Chain Act</span>
+            <span class="hidden w-0.5 h-5 bg-black md:block"></span>
+            <span>Cookie Preferences</span>
+
+
+        </div>
+        <!--Copyright-->
+        <div class="copy mt-6">
+            <p class="text-xs">© 2021 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
