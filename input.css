@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid-item li{
+    margin: 1.3rem 0;
+    color: rgba(0, 0, 0, .58);
+}
+
+.accordion-item-header {
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header:after {
+    content: '\2228';
+    font-size: 1rem;
+    font-weight: 500;
+    position: absolute;
+    right: 1rem;
+}
+
+.accordion-item-header.active:after {
+    content: '\005E';
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    top: -31px;
+    left: 90%;
+  }
+  
+  .hamburger-top,
+  .hamburger-middle,
+  .hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+  
+  .hamburger-middle {
+    transform: translateY(7px);
+  }
+  
+  .hamburger-bottom {
+    transform: translateY(14px);
+  }
+  
+  .open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  
+  .open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  
+  .open .hamburger-middle {
+    display: none;
+  }
+  
+  .open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+ 
+  #menu {
+      transition: all 0.5 ease-in;
+  }
